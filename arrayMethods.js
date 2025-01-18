@@ -27,3 +27,12 @@ const sum = nums2.reduce((accumulator, currentValue) => accumulator + currentVal
 
 console.log(sum);
 // Expected output: 10
+
+/*
+but how does this work exactly?
+------------------------------------
+
+
+
+
+*/
