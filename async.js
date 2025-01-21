@@ -1,6 +1,7 @@
-//asynchronous code is code that takes a set period of time to complete
-//This is mostly relevent when changing or getting data from an external API like Fetch API
-//promises make asynchronous code more readable and more akin to synchronous code
+//asynchronous code is code that takes a set period of time to complete.
+//It runs in the background, allowing other code to run at once (similar to tasks in C#).
+//This is mostly relevent when changing or getting data from an external API like Fetch API.
+//promises make asynchronous code more readable and more akin to synchronous code.
 //This is done using callbacks, i.e. .then() and .catch().
 
 //Here is an example using react:
@@ -30,7 +31,7 @@ const App = () => {
 const App2 = () => {
     const [avatar, setAvatar] = React.useState("");
 React.useEffect(() => {
-      //Note that because the function passed to useEffect cannot be async, we must create a separate function for our promise to be resolved in (fetchAvatar)
+      //Note that because the function passed to useEffect cannot be async, we must create a separate function for our promise to be resolved in (fetchAvatar).
     async function fetchAvatar() {
       const response = await fetch("https://api.github.com/users/logagill489");
       const data = await response.json();
